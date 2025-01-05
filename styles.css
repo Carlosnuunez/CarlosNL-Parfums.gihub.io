@@ -31,7 +31,7 @@ header {
 /* Logo 1 (centrado) */
 .logo1 {
     position: absolute; /* Posicionamos el logo1 en el centro */
-    left: 25%; /* Lo mueve a la mitad del contenedor */
+    left: 20%; /* Lo mueve a la mitad del contenedor */
 }
 
 .logo1 img {
