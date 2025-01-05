@@ -12,8 +12,8 @@ header {
     background-color: #000000;
     color: #fff;
     padding: 20px;
-    width: 100%; /* Asegura que el header ocupe todo el ancho */
-    position: relative; /* Necesario para el centrado del logo1 */
+    width: 100%; 
+    position: relative;
     box-sizing: border-box; /* Para que el padding no afecte el ancho */
 }
 
@@ -24,8 +24,8 @@ header {
 }
 
 .logo2 img {
-    max-width: 50px; /* Tamaño pequeño del logo2 */
-    height: auto; /* Mantiene la proporción */
+    max-width: 50px; /* TamaÃ±o pequeÃ±o del logo2 */
+    height: auto; /* Mantiene la proporciÃ³n */
 }
 
 /* Logo 1 (centrado) */
@@ -35,11 +35,11 @@ header {
 }
 
 .logo1 img {
-    max-width: 200px; /* Tamaño pequeño del logo1 */
-    height: auto; /* Mantiene la proporción */
+    max-width: 200px; /* TamaÃ±o pequeÃ±o del logo1 */
+    height: auto; /* Mantiene la proporciÃ³n */
 }
 
-/* Menú de navegación */
+/* MenÃº de navegaciÃ³n */
 nav {
     float: right; /* Alineamos el nav a la derecha */
     margin-right: 20px; /* Distancia desde el borde derecho */
@@ -53,7 +53,7 @@ nav ul {
 
 nav ul li {
     display: inline-block; /* Alinea los elementos horizontalmente */
-    margin: 0 15px; /* Espaciado entre los elementos */
+    margin: 0 15px; 
 }
 
 nav ul li a {
@@ -62,7 +62,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f4f4f4; /* Color más claro al pasar el ratón sobre los enlaces */
+    color: #f4f4f4;
 }
 
 /* Clearfix para evitar que los elementos floten fuera de su contenedor */
@@ -85,22 +85,22 @@ section.introduccion {
 }
 
 .imagen-principal {
-    display: flex; /* Haces el contenedor flexible */
+    display: flex; 
     justify-content: center; /* Centras el contenido horizontalmente */
     align-items: center; /* Centras el contenido verticalmente */
     padding: 20px; /* Espaciado opcional alrededor del contenedor */
 }
 
 .imagen-principal video {
-    max-width: 80%; /* Ajusta el ancho máximo del video */
-    height: auto; /* Mantén la proporción del video */
-    border-radius: 8px; /* Bordes redondeados para el video */
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 8px; 
 }
 
 .imagen-principal img {
-    max-width: 80%; /* Ajusta el ancho máximo de la imagen */
-    height: auto; /* Mantén la proporción */
-    border-radius: 8px; /* Mantén el borde redondeado existente */
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 8px;
 }
 
 /* Contenedor principal de los productos */
@@ -152,7 +152,7 @@ section.introduccion {
   .precio {
     font-size: 1.1rem;
     font-weight: 500;
-    color: #E94F37;  /* Color vibrante para llamar la atención */
+    color: #E94F37;
   }
   
   @media (max-width: 768px) {
@@ -194,11 +194,11 @@ section.introduccion {
 }
 /* Footer */
 footer {
-    background-color: #000000; /* Mismo color que el header */
-    color: #fff; /* Texto blanco para contrastar */
-    padding: 10px; /* Reducimos el padding para hacerlo más delgado */
+    background-color: #000000; 
+    color: #fff; 
+    padding: 10px; 
     text-align: center;
-    font-size: 0.9rem; /* Reducimos el tamaño de la fuente */
+    font-size: 0.9rem; 
     position: relative;
     bottom: 0;
     width: 100%;
@@ -213,18 +213,18 @@ footer a {
 }
 
 footer a:hover {
-    color: #f4f4f4; /* Color más claro al pasar el ratón */
+    color: #f4f4f4; 
 }
 
 footer p {
-    margin: 5px 0; /* Reducimos el margen entre párrafos */
+    margin: 5px 0; /* Reducimos el margen entre pÃ¡rrafos */
 }
 
 .search-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px; /* Espacio entre el título y la barra de búsqueda */
+    margin-top: 10px; /* Espacio entre el tÃ­tulo y la barra de bÃºsqueda */
     padding-left: 10%;
 }
 
@@ -247,4 +247,3 @@ footer p {
 .search-button:hover {
     background-color: #3778e9;
 }
-
