@@ -1,0 +1,250 @@
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    position: relative; /* Necesario para el centrado del logo1 */
+    box-sizing: border-box; /* Para que el padding no afecte el ancho */
+}
+
+/* Logo 2 (a la izquierda) */
+.logo2 {
+    float: left; /* Alineamos el logo2 a la izquierda */
+    margin-left: 20px; /* Distancia desde el borde izquierdo */
+}
+
+.logo2 img {
+    max-width: 50px; /* Tamaño pequeño del logo2 */
+    height: auto; /* Mantiene la proporción */
+}
+
+/* Logo 1 (centrado) */
+.logo1 {
+    position: absolute; /* Posicionamos el logo1 en el centro */
+    left: 25%; /* Lo mueve a la mitad del contenedor */
+}
+
+.logo1 img {
+    max-width: 200px; /* Tamaño pequeño del logo1 */
+    height: auto; /* Mantiene la proporción */
+}
+
+/* Menú de navegación */
+nav {
+    float: right; /* Alineamos el nav a la derecha */
+    margin-right: 20px; /* Distancia desde el borde derecho */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Elimina margen para alinear correctamente */
+}
+
+nav ul li {
+    display: inline-block; /* Alinea los elementos horizontalmente */
+    margin: 0 15px; /* Espaciado entre los elementos */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4; /* Color más claro al pasar el ratón sobre los enlaces */
+}
+
+/* Clearfix para evitar que los elementos floten fuera de su contenedor */
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #000000;
+}
+
+section.introduccion {
+    margin-bottom: 30px;
+}
+
+.imagen-principal {
+    display: flex; /* Haces el contenedor flexible */
+    justify-content: center; /* Centras el contenido horizontalmente */
+    align-items: center; /* Centras el contenido verticalmente */
+    padding: 20px; /* Espaciado opcional alrededor del contenedor */
+}
+
+.imagen-principal video {
+    max-width: 80%; /* Ajusta el ancho máximo del video */
+    height: auto; /* Mantén la proporción del video */
+    border-radius: 8px; /* Bordes redondeados para el video */
+}
+
+.imagen-principal img {
+    max-width: 80%; /* Ajusta el ancho máximo de la imagen */
+    height: auto; /* Mantén la proporción */
+    border-radius: 8px; /* Mantén el borde redondeado existente */
+}
+
+/* Contenedor principal de los productos */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    background-color: #f4f4f4;
+  }
+  
+  /* Estilos de cada producto */
+  .producto {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efecto hover para cada producto */
+  .producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Imagen del producto */
+  .producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+  
+  /* Nombre del producto */
+  .nombre-producto {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* Precio del producto */
+  .precio {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #E94F37;  /* Color vibrante para llamar la atención */
+  }
+  
+  @media (max-width: 768px) {
+    .productos {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }  
+
+/* Formulario de contacto */
+.formulario form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-top: 10px;
+}
+
+.formulario input, .formulario textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.formulario button {
+    background-color: #0066ff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #3778e9;
+}
+/* Footer */
+footer {
+    background-color: #000000; /* Mismo color que el header */
+    color: #fff; /* Texto blanco para contrastar */
+    padding: 10px; /* Reducimos el padding para hacerlo más delgado */
+    text-align: center;
+    font-size: 0.9rem; /* Reducimos el tamaño de la fuente */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Enlaces dentro del footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px; /* Reducimos el margen entre los enlaces */
+}
+
+footer a:hover {
+    color: #f4f4f4; /* Color más claro al pasar el ratón */
+}
+
+footer p {
+    margin: 5px 0; /* Reducimos el margen entre párrafos */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Espacio entre el título y la barra de búsqueda */
+    padding-left: 10%;
+}
+
+.search-bar {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-button:hover {
+    background-color: #3778e9;
+}
+
