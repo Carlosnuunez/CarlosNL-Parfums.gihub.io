@@ -247,3 +247,16 @@ footer p {
 .search-button:hover {
     background-color: #3778e9;
 }
+
+.footer2 {
+    background-color: #000000; 
+    color: #fff; 
+    padding: 10px; 
+    text-align: center;
+    font-size: 0.9rem; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute; top: 95%;
+}
